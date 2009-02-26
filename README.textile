@@ -20,15 +20,10 @@ h3. SETTING UP THE EXAMPLE IN MAC OS X
 # Add @127.0.0.1    youtubevideodisplay.local@
 # In Terminal.app get the exact path to the directory by typing @pwd ~/Sites/youtube-video-display/@
 # Edit */etc/apache2/extra/httpd-vhosts.conf* in your favourite editor
-# Add the following:
-
-<code><pre>
-<VirtualHost *>;
+# Add the following: <code><pre><VirtualHost *>;
     ServerName "youtubevideodisplay.local"
     DocumentRoot "PATH_FROM_STEP_4"
-</VirtualHost>
-</pre></code>
-
+</VirtualHost></pre></code>
 # Restart apache from terminal by typing @sudo apachectl graceful@ and entering your password
 # Navigate to *http://youtubevideodisplay.local/bin/main.html* and voila!
 
