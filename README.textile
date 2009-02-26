@@ -23,10 +23,10 @@ h3. SETTING UP THE EXAMPLE IN MAC OS X
 # Add the following:
 
 <code>
-<VirtualHost *>
+&lt;VirtualHost *&gt;
     ServerName "youtubevideodisplay.local"
     DocumentRoot "PATH_FROM_STEP_4"
-</VirtualHost>
+&lt;/VirtualHost&gt;
 </code>
 
 # Restart apache from terminal by typing @sudo apachectl graceful@ and entering your password
