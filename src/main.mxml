@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	layout="vertical" xmlns:video="com.bigbangtechnology.*">
+	
+	
+	<mx:HBox>
+		<mx:TextInput id="videoSource" text="http://www.youtube.com/watch?v=qk39NnHp3Yw" />
+		<mx:Button label="Load Video" click="video.source=videoSource.text" />	
+	</mx:HBox>
+	
+	<video:YoutubeVideoDisplay id="video" width="500" height="500" proxyUrl="/proxy.php?url=" />
+</mx:Application>
