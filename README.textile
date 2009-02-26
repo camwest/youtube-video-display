@@ -6,7 +6,7 @@ A Flex 3 component that allows you to play youtube videos inside video display c
 
 h3. INSTALLATION:
 
-git clone git@github.com:camwest/youtube-video-display.git youtube-video-display
+git clone git://github.com/camwest/youtube-video-display.git
 
 h3. REQUIREMENTS:
 
@@ -15,7 +15,7 @@ You need to proxy requests through a small php script (see proxy.php) for this t
 
 h3. SETTING UP THE EXAMPLE IN MAC OS X
 
-# In Terminal.app type @git clone git@github.com:camwest/youtube-video-display.git ~/Sites/youtube-video-display@
+# In Terminal.app type @git clone git://github.com/camwest/youtube-video-display.git ~/Sites/youtube-video-display@
 # Edit */etc/hosts* in your favourite editor
 # Add @127.0.0.1    youtubevideodisplay.local@
 # In Terminal.app get the exact path to the directory by typing @pwd ~/Sites/youtube-video-display/@
