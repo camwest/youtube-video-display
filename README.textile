@@ -22,12 +22,12 @@ h3. SETTING UP THE EXAMPLE IN MAC OS X
 # Edit */etc/apache2/extra/httpd-vhosts.conf* in your favourite editor
 # Add the following:
 
-<code>
-&lt;VirtualHost *&gt;
+<code><pre>
+<VirtualHost *>;
     ServerName "youtubevideodisplay.local"
     DocumentRoot "PATH_FROM_STEP_4"
-&lt;/VirtualHost&gt;
-</code>
+</VirtualHost>
+</pre></code>
 
 # Restart apache from terminal by typing @sudo apachectl graceful@ and entering your password
 # Navigate to *http://youtubevideodisplay.local/bin/main.html* and voila!
