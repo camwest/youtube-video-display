@@ -15,21 +15,22 @@ You need to proxy requests through a small php script (see proxy.php) for this t
 
 h3. SETTING UP THE EXAMPLE IN MAC OS X
 
-# Run @git clone git@github.com:camwest/youtube-video-display.git ~/Sites/youtube-video-display@
+# In Terminal.app type @git clone git@github.com:camwest/youtube-video-display.git ~/Sites/youtube-video-display@
 # Edit */etc/hosts* in your favourite editor
 # Add @127.0.0.1    youtubevideodisplay.local@
-# Get the exact path to the directory by typing @pwd ~/Sites/youtube-video-display/@ in Terminal
-# Add that path to the DocumentRoot in the next step
+# In Terminal.app get the exact path to the directory by typing @pwd ~/Sites/youtube-video-display/@
 # Edit */etc/apache2/extra/httpd-vhosts.conf* in your favourite editor
 # Add the following:
 
-@<VirtualHost *>
+<code>
+<VirtualHost *>
     ServerName "youtubevideodisplay.local"
     DocumentRoot "PATH_FROM_STEP_4"
-</VirtualHost>@
+</VirtualHost>
+</code>
 
 # Restart apache from terminal by typing @sudo apachectl graceful@ and entering your password
-# Navigate to http://youtubevideodisplay.local/bin/main.html and voila!
+# Navigate to *http://youtubevideodisplay.local/bin/main.html* and voila!
 
 
 h3. LICENSE:
